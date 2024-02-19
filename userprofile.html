@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>User Profile</h1>
+    <div class="profile">
+        <div class="avatar">
+            <img src="avatar.jpg" alt="User Avatar">
+            <input type="file" accept="image/*" id="avatarInput">
+            <label for="avatarInput">Change Avatar</label>
+        </div>
+        <div class="info">
+            <h2>John Doe</h2>
+            <p>Email: johndoe@example.com</p>
+            <p>Country: <span id="country">United States</span> <button onclick="editCountry()">Edit</button></p>
+            <p>Bio: <span id="bio">Lorem ipsum dolor sit amet...</span> <button onclick="editBio()">Edit</button></p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
